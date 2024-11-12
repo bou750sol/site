@@ -1,0 +1,35 @@
+@media (max-width: 1265px) and (min-width: 801px) {
+    .title h1 {
+        display: none;
+    }
+
+    .title img.mobileI {
+        display: block !important;
+        position: absolute;
+        width: 500px;
+        height: auto;
+        top: 105px;
+        left: 50%;
+        transform: translateX(-50%); 
+        z-index: 10;
+    }
+
+    .title img.Image {
+        position: relative !important; 
+        width: 500px;
+        height: auto;
+        top: -195px;
+        transform: translate(0, 45%);
+    }
+
+    .bou750-section {
+        margin-top: 185px;
+    }
+
+    .bannertext {
+        text-align: center;
+        line-height: 1.2;
+        max-width: 100%;
+        transition: color 0.3s ease;
+    }
+}

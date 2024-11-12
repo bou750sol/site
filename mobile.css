@@ -1,0 +1,87 @@
+@media (max-width: 800px) {
+
+    .title h1 {
+        display: none;
+    }
+
+    .nav a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        height: 140%;
+        filter: invert(0);
+    }
+
+    .nav a:hover {
+        background-color: #ff8000;
+        color: #000;
+    }
+
+    .nav a:hover .nav-icon {
+        filter: invert(1);
+    }
+
+    .title img.mobileI {
+        display: block !important;
+        position: absolute;
+        width: 70vw;
+        height: auto;
+        top: 98px;
+        left: 50%;
+        transform: translateX(-50%); 
+        z-index: 10;
+    }
+
+    .title img.Image {
+        position: relative !important; 
+        width: 59vw;
+        height: auto;
+        top: -17vw;
+        transform: translate(0, 45%);
+    }
+
+    .bou750-section {
+        margin-top: 25vw;
+    }
+
+    .bou750 h2 {
+        font-size: 10vw;
+    }
+
+    .bou750 {
+        width: 75vw;
+    }
+
+    .justified-text {
+        font-size: 12px;
+    }
+
+    .centered-text {
+        font-size: 15px;
+    }
+
+    .no-space-paragraph, .canav, #copyAlertI {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#backgroundAudio {
+    display: none;
+}
+
+body {
+    font-family: 'MonumentExtended', sans-serif;
+    background-color: #fff;
+    color: #000;
+    background: url('images/Watermark.png') repeat;
+    background-size: 1515px 830px;
+    overflow-x: hidden;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.home {
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav {
+    font-family: 'MonumentExtended', sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    gap: 15px;
+}
+
+.nav a {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.nav a:hover {
+    background-color: #ff8000;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: underline;
+    border-radius: 25px;
+    border: 1px solid #000;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.title h1 {
+    font-family: 'MonumentExtended', sans-serif;
+    font-size: 7.5vw;
+    color: #000;
+    margin-top: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.title img {
+    width: 375px;
+    margin-top: -30px;
+}
+
+.bou750-section {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0vw;
+    margin-top: -10px;
+}
+
+.bou750 h2 {
+    font-family: 'MonumentExtended';
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+.bou750 {
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.justified-text {
+    text-align: justify;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+.centered-text {
+    text-align: center;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.no-space-paragraph {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    margin-top: -2px; 
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.canav {
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto 0 auto;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: -10px;
+    cursor: copy;
+    border: 1px solid #000;
+}
+
+.canav:hover {
+    background-color: #ff8000;
+    color: #000;
+    text-decoration: underline;
+    border: 1px solid #000;
+}
+
+#copyAlertI {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff8000;
+    color: #000;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: 'MonumentExtended', sans-serif;
+    z-index: 100;
+    display: none;
+    border: 1px solid #000;
+}
+
+.bannerI {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.5vw;
+}
+
+.bannerI::before, .bannerI::after {
+    content: '';
+    position: absolute;
+    margin-top: -100px;
+    width: 15vw;
+    height: 1000%;
+    z-index: 2;
+}
+
+.bannerI::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.bannerI::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.bannertext {
+    font-family: 'MonumentExtended', sans-serif;
+    font-size: 4.5vw;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+footer {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #000;
+    text-align: center;
+    padding: 0px;
+    font-size: 12px;
+    height: 10px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
